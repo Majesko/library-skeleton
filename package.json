@@ -1,6 +1,6 @@
 {
   "name": "@majesko/library-skeleton",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "scripts": {
     "build": "npx tsc --outDir dist/lib --declarationDir dist/types --declaration true && npx rollup -c"
