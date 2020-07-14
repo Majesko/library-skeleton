@@ -1,1 +1,20 @@
-var t=function(){function t(){}return t.prototype.greet=function(t){return"Hello, "+t},t}(),e=function(){function e(){this.greet=new t}return e.prototype.hello=function(t){return this.greet.greet(t)},e}();export default e;
+var Hello = /** @class */ (function () {
+    function Hello() {
+    }
+    Hello.prototype.greet = function (userName) {
+        return "Hello, " + userName;
+    };
+    return Hello;
+}());
+
+var ExampleClass = /** @class */ (function () {
+    function ExampleClass() {
+        this.greet = new Hello();
+    }
+    ExampleClass.prototype.hello = function (userName) {
+        return this.greet.greet(userName);
+    };
+    return ExampleClass;
+}());
+
+export default ExampleClass;
