@@ -24,7 +24,7 @@ const config = {
             sourcemap: true,
         },
         {
-            file: pkg.browser,
+            file: `dist/${pkg.pkgName}.min.js`,
             format: 'iife',
             name: pkg.pkgName,
             sourcemap: true,
