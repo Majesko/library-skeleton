@@ -5,6 +5,7 @@
     "sourceMap": true,
     "noImplicitAny": true,
     "esModuleInterop": true,
+    "moduleResolution": "Node"
   },
   "include": [
     "src/**/*"
