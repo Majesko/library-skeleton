@@ -1,2 +1,3 @@
-import ExampleClass from "./ExampleClass";
-export default ExampleClass;
+export default interface ExampleClass {
+    hello(username: string): string;
+}
