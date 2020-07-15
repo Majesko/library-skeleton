@@ -14,19 +14,19 @@ const config = {
     input: 'src/index.ts',
     output: [
         {
-            file: pkg.output.main,
+            file: pkg.main,
             format: 'cjs',
             sourcemap: true,
         },
         {
-            file: pkg.output.module,
+            file: pkg.module,
             format: 'es',
             sourcemap: true,
         },
         {
-            file: pkg.output.iife.file,
+            file: pkg.browser,
             format: 'iife',
-            name: pkg.output.iife.global,
+            name: pkg.pkgName,
             sourcemap: true,
         },
     ],

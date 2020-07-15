@@ -1,6 +1,6 @@
 {
   "name": "@majesko/library-skeleton",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "author": "",
   "license": "ISC",
@@ -13,15 +13,11 @@
     "types",
     "README.md"
   ],
-  "output": {
-    "types": "dist/index.d.ts",
-    "main": "dist/index.js",
-    "module": "dist/index.es.js",
-    "iife": {
-      "global": "pkgName",
-      "file": "dist/package-name.min.js"
-    }
-  },
+  "pkgName": "myAwesomePkg",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "browser": "dist/package-name.min.js",
   "dependencies": {},
   "peerDependencies": {},
   "devDependencies": {
