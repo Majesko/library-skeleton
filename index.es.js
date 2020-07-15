@@ -1,5 +1,3 @@
-'use strict';
-
 var Hello = /** @class */ (function () {
     function Hello() {
     }
@@ -19,4 +17,5 @@ var ExampleClass = /** @class */ (function () {
     return ExampleClass;
 }());
 
-module.exports = ExampleClass;
+export default ExampleClass;
+//# sourceMappingURL=index.es.js.map

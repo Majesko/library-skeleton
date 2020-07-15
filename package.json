@@ -1,21 +1,33 @@
 {
   "name": "@majesko/library-skeleton",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
-  "scripts": {
-    "build": "npx tsc --outDir dist/lib --declarationDir dist/types --declaration true && npx rollup -c"
-  },
-  "files": ["dist"],
-  "types": "dist/index.d.ts",
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
   "author": "",
   "license": "ISC",
+  "scripts": {
+    "build:prod": "NODE_ENV=production npx tsc --outDir lib --declarationDir types --declaration true && npx rollup -c",
+    "build:dev": "NODE_ENV=development npx tsc --outDir lib --declarationDir types --declaration true && npx rollup -c"
+  },
+  "files": [
+    "dist"
+  ],
+  "output": {
+    "types": "index.d.ts",
+    "main": "index.js",
+    "module": "index.es.js",
+    "iife": {
+      "global": "pkgName",
+      "file": "package-name.min.js"
+    }
+  },
   "dependencies": {},
   "peerDependencies": {},
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
     "@rollup/plugin-typescript": "^5.0.2",
     "rollup": "^2.21.0",
+    "rollup-plugin-progress": "^1.1.2",
     "rollup-plugin-terser": "^6.1.0",
     "tslib": "^2.0.0",
     "typescript": "^3.9.6"
