@@ -1,6 +1,6 @@
 {
   "name": "@majesko/library-skeleton",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "author": "",
   "license": "ISC",
@@ -9,7 +9,9 @@
     "build:dev": "NODE_ENV=development npx tsc --outDir lib --declarationDir types --declaration true && npx rollup -c"
   },
   "files": [
-    "dist"
+    "dist",
+    "types",
+    "README.md"
   ],
   "output": {
     "types": "dist/index.d.ts",
