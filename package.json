@@ -1,6 +1,6 @@
 {
   "name": "@majesko/library-skeleton",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "author": "",
   "license": "ISC",
@@ -9,15 +9,15 @@
     "build:dev": "NODE_ENV=development npx tsc --outDir lib --declarationDir types --declaration true && npx rollup -c"
   },
   "files": [
-    ""
+    "dist"
   ],
   "output": {
-    "types": "index.d.ts",
-    "main": "index.js",
-    "module": "index.es.js",
+    "types": "dist/index.d.ts",
+    "main": "dist/index.js",
+    "module": "dist/index.es.js",
     "iife": {
       "global": "pkgName",
-      "file": "package-name.min.js"
+      "file": "dist/package-name.min.js"
     }
   },
   "dependencies": {},
